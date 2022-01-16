@@ -8,7 +8,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date)
     {allPosts.map((post, index) => {
         const href = `window.location.href='/posts/${post.file.pathname.split('/').pop().split('.').shift()}'`;
         return (
-            <div class="mb-1 bg-gray-100 border border-gray-300 rounded py-2 px-3">
+            <div class="mb-2 bg-gray-100 border border-gray-300 rounded py-2 px-3">
                 <div class="flex">
                     <h1 onclick={href} class="font-bold text-lg mr-3 hover:underline">{post.title}</h1><p class="text-md text-gray-500">{dayjs(post.date).format("MMM D, YYYY")}</p>
                 </div>
