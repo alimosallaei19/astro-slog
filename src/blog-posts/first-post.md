@@ -1,7 +1,7 @@
 ---
 title: Hello World!
 desc: This is a post to intro my blog, and to test out the NetlifyCMS system.
-date: 2022-01-16T01:56:07.664Z
+date: 2021-09-28T00:56:07.664Z
 ---
 > 🧪 Feel free to skip this article, it's just to show what my blog can do!
 ## Hey there!
