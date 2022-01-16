@@ -23,6 +23,7 @@ const { slug, readingTime } = getPostData(Astro.props.post);
 	<meta name="viewport" content="width=device-width">
 	<title>{title} - A Post by Ali Mosallaei</title>
 	<link rel="icon" type="image/x-icon" href="https://emojicdn.elk.sh/%F0%9F%93%A6?style=google" />
+	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" href="/src/styles/posts.scss"/>
  	
 </head>
@@ -36,7 +37,7 @@ const { slug, readingTime } = getPostData(Astro.props.post);
 					<div>{dayjs(date).format("MMMM DD, YYYY")}</div>
 					<div class="italic">{readingTime}</div>
 				</div>
-				<div class="bg-purple-500">
+				<div class="px-6">
 					{content}
 				</div>
             </div>

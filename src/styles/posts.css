@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind apply;
+
 
 /* Additional vertical padding used by kbd tag. */
 .py-05 {
@@ -34,11 +37,11 @@
 }
 
 .markdown h1 {
-  @apply leading-tight text-2xl font-semibold mb-0.5 mt-6;
+  @apply leading-tight border-b text-4xl font-semibold mb-4 mt-6 pb-2;
 }
 
 .markdown h2 {
-  @apply leading-tight text-xl font-semibold mb-0.5 mt-6;
+  @apply leading-tight border-b text-2xl font-semibold mb-4 mt-6 pb-2;
 }
 
 .markdown h3 {
@@ -70,7 +73,7 @@
 }
 
 .markdown pre code {
-  @apply block bg-transparent p-0 overflow-visible rounded-lg;
+  @apply block bg-transparent p-0 overflow-visible rounded-none;
 }
 
 .markdown ul {
@@ -99,9 +102,9 @@
 
 /* Override pygments style background color. */
 .markdown .highlight pre {
-  @apply bg-gray-100 ;
+  @apply bg-gray-100 !important;
 }
 
 .markdown img{
-  @apply w-4/5 drop-shadow-xl m-auto mb-4;
+  @apply w-44 drop-shadow-xl m-auto rounded-xl;
 }
