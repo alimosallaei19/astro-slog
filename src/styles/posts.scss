@@ -34,31 +34,31 @@
 }
 
 .markdown h1 {
-  @apply leading-tight text-2xl font-semibold mb-0.5 mt-6;
+  @apply leading-tight text-2xl font-semibold mb-3 mt-6;
 }
 
 .markdown h2 {
-  @apply leading-tight text-xl font-semibold mb-0.5 mt-6;
+  @apply leading-tight text-xl font-semibold mb-3 mt-6;
 }
 
 .markdown h3 {
-  @apply leading-snug text-lg font-semibold mb-4 mt-6;
+  @apply leading-snug text-lg font-semibold mb-3 mb-4 mt-6;
 }
 
 .markdown h4 {
-  @apply leading-none text-base font-semibold mb-4 mt-6;
+  @apply leading-none text-base font-semibold mb-3 mt-6;
 }
 
 .markdown h5 {
-  @apply leading-tight text-sm font-semibold mb-4 mt-6;
+  @apply leading-tight text-sm font-semibold mb-3 mt-6;
 }
 
 .markdown h6 {
-  @apply leading-tight text-sm font-semibold text-gray-600 mb-4 mt-6;
+  @apply leading-tight text-sm font-semibold text-gray-600 mb-3 mt-6;
 }
 
 .markdown blockquote {
-  @apply text-base border-l-4 border-gray-300 pl-4 pr-4 text-gray-600;
+  @apply text-base border-l-4 border-gray-300 pl-4 pr-4 text-gray-900 py-1.5 bg-gray-100;
 }
 
 .markdown code {
@@ -104,4 +104,8 @@
 
 .markdown img{
   @apply w-4/5 drop-shadow-xl m-auto mb-4;
+}
+
+.katex-html{
+  display:none;
 }
