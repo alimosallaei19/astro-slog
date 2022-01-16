@@ -62,15 +62,15 @@
 }
 
 .markdown code {
-  @apply font-mono text-sm inline bg-gray-200 rounded px-1 py-05;
+  @apply font-mono text-sm inline bg-gray-200 rounded px-1 py-05 break-words;
 }
 
 .markdown pre {
-  @apply bg-gray-100 rounded p-4;
+  @apply bg-gray-100 rounded p-4 break-words;
 }
 
 .markdown pre code {
-  @apply block bg-transparent p-0 overflow-visible rounded-lg;
+  @apply block bg-transparent p-0 overflow-visible rounded-lg break-words;
 }
 
 .markdown ul {
