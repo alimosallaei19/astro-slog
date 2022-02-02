@@ -4,7 +4,7 @@ desc: A new website framework, designed for people who love VanillaJS.
 date: 2022-02-02T15:14:28.825Z
 ---
 > Before I actually begin this piece, I do not have any public code for this yet.
->
+
 > Also, a word for the wise: *this method may still leave a lot of vulnerabilities in your code. This should NOT be adopted for enterprise-scale projects.
 
 ### Meet GEMV (pronounced *jem-vee*).
@@ -63,7 +63,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         obfuscator: {
             options: {
-                banner: '// SHP, a service of DeltaLabs.\n',
+                banner: '// Hello :).\n',
                 debugProtection: true,
                 debugProtectionInterval: true
             },
@@ -77,3 +77,26 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['obfuscator']);
 };
 ```
+
+The **Express** portion of the app is your middleware. It takes care of loading your API, while also serving your public pages. Here's an example of that:
+
+```
+app.use(express.static('public',{extensions:['html']}));
+
+app.post("/api", async (req, res) => {
+	console.log(req.body)
+	try {
+		var enda = `./api/${req.body.api}.js`
+		let commandFile = require(enda);
+		var tooez = await commandFile.run(req.body);
+		res.json(tooez)
+	} catch (err) {
+		console.log(err);
+		if (err.code === "MODULE_NOT_FOUND") {
+			return;
+		}
+	}
+})
+```
+
+The **MongoDB** portion allows you to have a database. I high suggest using the free MongoDB Atlas tier to host a database for developmental purposes. It gives you 512mb of storage, and 500 connections which is *plenty*.
