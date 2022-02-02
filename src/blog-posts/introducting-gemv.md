@@ -11,10 +11,10 @@ date: 2022-02-02T15:14:28.825Z
 
 This is the website framework for people who really love the HTML/CSS/JS stack, but hate its security vulnerabilities. Here's what it stands for:
 
-* **G**: Grunt
-* **E**: Express
-* **M**: MongoDB
-* **V**: VanillaJS
+* **G**: [Grunt](https://gruntjs.com/)
+* **E**: [ExpressJS](https://expressjs.com/)
+* **M**: [MongoDB](https://www.mongodb.com/)
+* **V**: [VanillaJS](http://vanilla-js.com/)
 
 I have always disliked front-end web frameworks, like React, Vue and NextJS: they all have very non-intuitive and complex ways of doing simple things, like binding variables and submitting forms. 
 
@@ -100,3 +100,9 @@ app.post("/api", async (req, res) => {
 ```
 
 The **MongoDB** portion allows you to have a database. I high suggest using the free MongoDB Atlas tier to host a database for developmental purposes. It gives you 512mb of storage, and 500 connections which is *plenty*.
+
+Lastly, the **VanillaJS** portion hydrates your client-side HTML. It allows you to interact with the HTML page, and is what is obfuscated by Grunt.
+
+### Why?
+
+Because it's fun to see all the different possibilities that exist. This is a stack I want to create a project with in the near future, and I want to see how it scales. So far, it has been great to see that there are systems out there to make these a reality. Let me know if you want a template for a GEMV project; I'll post it here!
