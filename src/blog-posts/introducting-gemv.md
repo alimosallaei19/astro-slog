@@ -3,7 +3,7 @@ title: Introducting GEMV
 desc: A new website framework, designed for people who love VanillaJS.
 date: 2022-02-02T15:14:28.825Z
 ---
-> Before I actually begin this piece, I do not have any public code for this yet.
+> **Update**: I've released a template repository for a GEMV project. [Here it is](https://github.com/alimosallaei19/gemv).
 
 > Also, a word for the wise: *this method may still leave a lot of vulnerabilities in your code. This should NOT be adopted for enterprise-scale projects.
 
