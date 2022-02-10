@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: "user/repo"
   branch: main # NOTE this relates to your GitHub branch
 
 publish_mode: editorial_workflow
